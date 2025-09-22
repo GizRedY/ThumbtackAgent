@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  thumbtack-bot:
+    build: .
+    container_name: thumbtack-automation-bot
+    restart: unless-stopped
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GOOGLE_CALENDAR_CREDENTIALS_FILE=credentials.json
+      - GOOGLE_CALENDAR_ID=${GOOGLE_CALENDAR_ID:-primary}
+      - THUMBTACK_EMAIL=${THUMBTACK_EMAIL}
+      - THUMBTACK_PASSWORD=${THUMBTACK_PASSWORD}
+      - CHECK_INTERVAL_MINUTES=${CHECK_INTERVAL_MINUTES:-5}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - TIMEZONE=${TIMEZONE:-America/New_York}
+      - BUSINESS_NAME=${BUSINESS_NAME:-Your Business}
+      - SERVICE_TYPE=${SERVICE_TYPE:-Photography}
+      - BASE_PRICE=${BASE_PRICE:-150}
+      - PRICE_RANGE_MIN=${PRICE_RANGE_MIN:-100}
+      - PRICE_RANGE_MAX=${PRICE_RANGE_MAX:-500}
+    volumes:
+      - ./credentials.json:/app/credentials.json:ro
+      - ./token.pickle:/app/token.pickle
+      - ./logs:/app/logs
+      - ./mock_leads.json:/app/mock_leads.json
+      - ./mock_messages.json:/app/mock_messages.json
+    networks:
+      - thumbtack-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import sys; sys.exit(0)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Redis for caching (if needed in future)
+  # redis:
+  #   image: redis:7-alpine
+  #   container_name: thumbtack-redis
+  #   restart: unless-stopped
+  #   ports:
+  #     - "6379:6379"
+  #   networks:
+  #     - thumbtack-network
+
+  # Optional: PostgreSQL for data persistence (if needed in future)
+  # postgres:
+  #   image: postgres:15-alpine
+  #   container_name: thumbtack-postgres
+  #   restart: unless-stopped
+  #   environment:
+  #     POSTGRES_DB: thumbtack_bot
+  #     POSTGRES_USER: ${POSTGRES_USER:-botuser}
+  #     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-botpassword}
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  #   networks:
+  #     - thumbtack-network
+
+networks:
+  thumbtack-network:
+    driver: bridge
+
+# volumes:
+#   postgres_data:
