@@ -1,35 +1,68 @@
 [
   {
-    "id": "msg_1695045200_1001",
-    "lead_id": "lead_1695045123_1",
+    "id": "msg_test_001",
+    "lead_id": "lead_test_001",
     "sender": "customer",
-    "content": "Hi! I saw your profile and I'm interested in your services. When would you be available to install my ceiling fan?",
+    "content": "Hi, I have outlet issue. Need someone to check it out.",
     "message_type": "message",
-    "timestamp": "2025-09-22T10:35:00",
+    "timestamp": "2025-09-22T13:05:00",
     "metadata": {
       "read": false
     }
   },
   {
-    "id": "msg_1695045200_1002", 
-    "lead_id": "lead_1695045123_2",
+    "id": "msg_test_002",
+    "lead_id": "lead_test_002",
     "sender": "customer",
-    "content": "The faucet is dripping constantly and wasting water. How much would you charge to replace it? I have the new faucet ready.",
+    "content": "Hello! Need fan installation in living room. When can you come?",
     "message_type": "quote_request",
-    "timestamp": "2025-09-22T11:20:00",
+    "timestamp": "2025-09-22T13:35:00",
     "metadata": {
       "read": false
     }
   },
   {
-    "id": "msg_1695045200_1003",
-    "lead_id": "lead_1695045123_3", 
-    "sender": "customer",
-    "content": "Do you have availability this Saturday or Sunday? I can be flexible with timing.",
+    "id": "msg_1758571306_6324",
+    "lead_id": "lead_test_001",
+    "sender": "business",
+    "content": "Hello Robert,\n\nThank you for reaching out to Mikhail's Fixes regarding your outlet issue. We appreciate your trust in our services.\n\nThe quoted price for checking and resolving the outlet issue is $120.00.\n\nI understand the importance of ensuring your outlets are working properly and I will be happy to assist you with this. Could you please provide a convenient time for our technician to come and inspect the issue?\n\nOnce we have a scheduled time, our team will promptly address the problem and ensure your outlets are functioning perfectly.\n\nLooking forward to helping you resolve this issue.\n\nBest regards,\nMikhail's Fixes",
     "message_type": "message",
-    "timestamp": "2025-09-22T12:05:00",
+    "timestamp": "2025-09-22T16:01:46.780523",
     "metadata": {
-      "read": false
+      "sent_by": "bot"
+    }
+  },
+  {
+    "id": "msg_1758571392_1021",
+    "lead_id": "lead_test_002",
+    "sender": "business",
+    "content": "Dear Lisa Martinez,\n\nThank you for reaching out to Mikhail's Fixes for your fan installation needs. I appreciate the opportunity to assist you with this project.\n\nI can accommodate your request for a fan installation in your living room for the quoted price of $120.00. I am available to come by at your convenience. Please let me know your preferred date and time, so we can schedule the installation.\n\nLooking forward to helping you create a more comfortable living space with your new fan. Feel free to contact me with any further questions or to confirm the appointment.\n\nBest regards,\n\nMikhail",
+    "message_type": "message",
+    "timestamp": "2025-09-22T16:03:12.516364",
+    "metadata": {
+      "sent_by": "bot"
+    }
+  },
+  {
+    "id": "msg_1758572191_5257",
+    "lead_id": "lead_test_001",
+    "sender": "business",
+    "content": "Dear Robert Wilson,\n\nThank you for reaching out to Mikhail's Fixes regarding the outlet issue in your home. We appreciate the opportunity to assist you with this matter.\n\nThe quoted price for the service is $120.00, which includes the inspection and necessary repairs for your outlet issue.\n\nTo address your specific needs, our technician will visit your home at a convenient time for you to assess the outlet problem and provide a solution. Please let us know your availability so we can schedule a service appointment that works best for you.\n\nIf you have any further questions or would like to proceed with the service, feel free to contact us at your earliest convenience.\n\nThank you again for choosing Mikhail's Fixes. We look forward to resolving your outlet issue promptly and effectively.\n\nBest regards,\n\n[Your Name]\nMikhail's Fixes",
+    "message_type": "message",
+    "timestamp": "2025-09-22T16:16:31.114761",
+    "metadata": {
+      "sent_by": "bot"
+    }
+  },
+  {
+    "id": "msg_1758572279_9573",
+    "lead_id": "lead_test_002",
+    "sender": "business",
+    "content": "Hello Lisa Martinez,\n\nThank you for reaching out to Mikhail's Fixes for your fan installation needs. I appreciate the opportunity to assist you with this project.\n\nI can definitely help with installing the fan in your living room for the quoted price of $120.00. I am available to come by for the installation at your convenience. \n\nCould you please provide me with your preferred date and time for the service? Once confirmed, I will ensure everything is taken care of efficiently.\n\nLooking forward to working with you on this project!\n\nBest regards,\nMikhail",
+    "message_type": "message",
+    "timestamp": "2025-09-22T16:17:59.454626",
+    "metadata": {
+      "sent_by": "bot"
     }
   }
 ]
