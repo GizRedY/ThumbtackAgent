@@ -1,0 +1,53 @@
+[
+  {
+    "id": "lead_1695045123_1",
+    "customer_name": "John Smith",
+    "customer_email": "john.smith@example.com",
+    "customer_phone": "+15550001234",
+    "service_category": "Home Repairs & Installation",
+    "description": "I need help installing a new ceiling fan in my living room. The electrical box is already there, just need someone to install and wire it properly.",
+    "budget_range": [80, 150],
+    "preferred_date": "2025-09-25T10:00:00",
+    "location": "Brooklyn, NY",
+    "status": "new",
+    "created_at": "2025-09-22T10:30:00",
+    "metadata": {
+      "source": "thumbtack_mock",
+      "urgency": "medium"
+    }
+  },
+  {
+    "id": "lead_1695045123_2", 
+    "customer_name": "Sarah Johnson",
+    "customer_email": "sarah.j@example.com",
+    "customer_phone": "+15550005678",
+    "service_category": "Home Repairs & Installation",
+    "description": "My kitchen faucet is leaking and needs to be replaced. I already bought a new faucet, just need installation. Preferably this week.",
+    "budget_range": [100, 200],
+    "preferred_date": "2025-09-24T14:00:00",
+    "location": "Manhattan, NY",
+    "status": "new", 
+    "created_at": "2025-09-22T11:15:00",
+    "metadata": {
+      "source": "thumbtack_mock",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "lead_1695045123_3",
+    "customer_name": "Mike Davis",
+    "customer_email": "mike.davis@example.com", 
+    "customer_phone": "+15550009876",
+    "service_category": "Home Repairs & Installation",
+    "description": "Need to mount a 65 inch TV on the wall in my bedroom. Wall mount is purchased. Looking for someone reliable this weekend.",
+    "budget_range": [60, 120],
+    "preferred_date": "2025-09-28T16:00:00",
+    "location": "Queens, NY",
+    "status": "new",
+    "created_at": "2025-09-22T12:00:00",
+    "metadata": {
+      "source": "thumbtack_mock",
+      "urgency": "medium"
+    }
+  }
+]

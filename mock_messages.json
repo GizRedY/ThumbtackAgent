@@ -1,0 +1,35 @@
+[
+  {
+    "id": "msg_1695045200_1001",
+    "lead_id": "lead_1695045123_1",
+    "sender": "customer",
+    "content": "Hi! I saw your profile and I'm interested in your services. When would you be available to install my ceiling fan?",
+    "message_type": "message",
+    "timestamp": "2025-09-22T10:35:00",
+    "metadata": {
+      "read": false
+    }
+  },
+  {
+    "id": "msg_1695045200_1002", 
+    "lead_id": "lead_1695045123_2",
+    "sender": "customer",
+    "content": "The faucet is dripping constantly and wasting water. How much would you charge to replace it? I have the new faucet ready.",
+    "message_type": "quote_request",
+    "timestamp": "2025-09-22T11:20:00",
+    "metadata": {
+      "read": false
+    }
+  },
+  {
+    "id": "msg_1695045200_1003",
+    "lead_id": "lead_1695045123_3", 
+    "sender": "customer",
+    "content": "Do you have availability this Saturday or Sunday? I can be flexible with timing.",
+    "message_type": "message",
+    "timestamp": "2025-09-22T12:05:00",
+    "metadata": {
+      "read": false
+    }
+  }
+]
